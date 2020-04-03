@@ -13,11 +13,9 @@ import TvComponent from "./components/TheTvComponent.js";
             switchMovie() {
                 this.activeComponent = MovieComponent
             },
-
             switchAudio() {
                  this.activeComponent = AudioComponent
             },
-
             switchTv() {
                 this.activeComponent = TvComponent
             }

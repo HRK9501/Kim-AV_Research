@@ -24,12 +24,26 @@
             </header>
             <!-- Menu -->
             <section class="menu">
-                <button @click="switchMovie">Movie</button>
-                <button @click="switchAudio">Audio</button>
-                <button @click="switchTv">TV</button>
+                <button @click="switchMovie" class="menubtn">Movie</button>
+                <button @click="switchAudio" class="menubtn">Audio</button>
+                <button @click="switchTv" class="menubtn">TV</button>
             </section>
 
         <component :is="activeComponent"></component>
+
+
+    <!--Footer-->
+    <footer class="mainFooter">
+        <div class="footerLogo">
+            <img src="images/orange-logo.svg" alt="mainlogo">
+        </div>
+        <div class="socialicons">
+            <img src="images/sns_instagram.svg" alt="insta">
+            <img src="images/sns_twitter.svg" alt="twitter">
+            <img src="images/sns_facebook.svg" alt="facebook">
+        </div>
+        <p>2020 Roku. Inc</p>
+    </footer>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
