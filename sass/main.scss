@@ -1,0 +1,98 @@
+@import '_vars';
+
+body { font-family: proxima-nova, sans-serif; font-style: normal; }
+
+#app {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+//Header
+header {
+    display: flex;
+    justify-content: center;
+    background-color: $theme_blue;
+    align-items: center;
+    height: 60px;
+    position: relative;
+}
+
+// Header Secion
+
+.mainLogo img { width: 100px; } 
+
+.adminIcon { position: absolute; margin-left: 42%; }
+
+.adminIcon img { width: 40px; }
+
+//Menu
+.menu {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $bg-gray;
+    padding: 0 20px;
+}
+
+.menu p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.menu p:hover {
+    color: $theme_orange;
+}
+
+
+// Promo Banner
+.promoBan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+    background: linear-gradient(#F2CE1B,#BF1784,#2F048C);
+}
+
+.poster {
+    margin-left: 30px; 
+    border: white 5px solid; 
+}
+
+.poster img { width: 124px }
+
+.promoinfo { margin-left: 20px; }
+
+.promoinfo h2 { font-size: 20px; font-weight: bold; margin: 0 0 20px 0; color: white; }
+
+.promoinfo p { font-size: 10px; padding-top: 10px; margin: 0; color: white; }
+
+// i {
+//     border: solid black;
+//     border-width: 0 3px 3px 0;
+//     display: inline-block;
+//     padding: 3px;
+// }
+
+// .rightArrow {
+//     transform: rotate(-45deg);
+// }
+
+// .leftArrow {
+//     transform: rotate(135deg);
+// }
+
+
+//movies decades
+.movie90 {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+//Footer
+.mainFooter {text-align: center; background-color: $theme_blue; padding: 20px 0;}
+
+.footerLogo img {width: 100px;}
+.socialicons {margin: 15px 0;}
+.socialicons img {width: 30px; filter: invert(1); margin: 0 10px;}
+.mainFooter p {margin: 0; color: white;}

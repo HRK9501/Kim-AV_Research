@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Test</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main id="app">
+        <header class="mainHeader">   
+            <!-- Our Logo Here -->
+                <div class="mainLogo">
+                    <img src="images/orange-logo.svg" alt="mainlogo">
+                </div>
+            <!-- Our Admin Icon Here -->
+                <div class="adminIcon">
+                    <img src="images/admin.png" alt="admin">
+                </div> 
+            </header>
+            <!-- Menu -->
+            <section class="menu">
+                <button @click="switchMovie">Movie</button>
+                <button @click="switchAudio">Audio</button>
+                <button @click="switchTv">TV</button>
+            </section>
+
+        <component :is="activeComponent"></component>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src='js/main.js' type='module'></script>
+</body>
+
+</html>
