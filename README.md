@@ -1,5 +1,5 @@
 # AV-Research Assignment
-
+The project is about making audio and video application. This Research Assignment is based on Roku Flashback.
 
 ### Dependencies
 
